@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [here](https://beeching.github.io/Social-Proof-Section/)
 
 ## My process
 - I coded with a mobile-first workflow. First I worked on the html structure and getting everything in-place, and then I worked on the css. I used grid to allow for ease of layout switching when using media queries for larger device sizes.
@@ -31,7 +31,7 @@ Users should be able to:
 ### Built with
 
 - HTML5 markup
-- CSS
+- CSS (SASS)
 - CSS Grid & Flexbox
 - Mobile-first workflow
 
