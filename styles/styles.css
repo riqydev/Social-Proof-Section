@@ -1,0 +1,260 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  font-size: 15px;
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  padding: 10px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "title" "stars" "reviews";
+}
+
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.title h1 {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #502050;
+}
+
+.title p {
+  color: #937b92;
+  font-weight: 500;
+}
+
+.star-cards {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: stars;
+}
+
+.card1 {
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.card1 .stars {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 155px;
+}
+
+.card1 p {
+  color: #502050;
+  font-weight: 700;
+}
+
+.reviews {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: reviews;
+}
+
+.card2 {
+  background-color: #502050;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  padding: 33px;
+  margin-bottom: 20px;
+  line-height: 23px;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+      grid-template-areas: "img name" "text text";
+}
+
+.card2 img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  border-radius: 9999px;
+  width: 45px;
+  margin: auto;
+}
+
+.card2 .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  margin-left: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 700;
+  color: white;
+}
+
+.card2 .verified {
+  font-weight: 400;
+  color: #ee68a4;
+}
+
+.card2 p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+  color: white;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    overflow: hidden;
+  }
+  main {
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "title stars" "reviews reviews";
+    gap: 0;
+  }
+  .title {
+    width: 460px;
+    margin: auto;
+    margin-right: 140px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .title h1 {
+    font-size: 45px;
+    padding: 0;
+  }
+  .reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1300px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2%;
+  }
+  .reviews #colton {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .reviews #irene {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .reviews #anne {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .reviews .card2 {
+    width: 400px;
+    height: 240px;
+  }
+  .star-cards {
+    margin-top: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+    justify-self: end;
+    width: 610px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .star-cards #in-reviews {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .star-cards #in-guru {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .star-cards #in-best {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .card1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    gap: 20px;
+    padding-left: 20px;
+    height: 60px;
+    width: 500px;
+  }
+  .card1 .stars {
+    margin-top: -7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 155px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
