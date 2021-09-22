@@ -26,7 +26,7 @@ Users should be able to:
 - Live Site URL: [here](https://beeching.github.io/Social-Proof-Section/)
 
 ## My process
-- I coded with a mobile-first workflow. First I worked on the html structure and getting everything in-place, and then I worked on the css. I used grid to allow for ease of layout switching when using media queries for larger device sizes.
+
 
 ### Built with
 
