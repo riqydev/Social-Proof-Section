@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [here](https://beeching.github.io/Social-Proof-Section/)
+- Live Site URL: [here](https://riqydev.github.io/Social-Proof-Section/)
 
 ## My process
 
@@ -60,5 +60,5 @@ Since it was my first time using grid, I think I have some ways to go until I'm 
 
 ## Author
 
-- Frontend Mentor - [@beeching](https://www.frontendmentor.io/profile/beeching)
+- Frontend Mentor - [@riqydev](https://www.frontendmentor.io/profile/riqydev)
 
